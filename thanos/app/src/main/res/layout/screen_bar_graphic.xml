@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/screen_bar_graphic_image"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="10"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_reload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/screen_bar_graphic_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_bar_graphic_image"
+        tools:text="@tools:sample/lorem" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/screen_bar_graphic_linearprogress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_bar_graphic_text" />
+
+    <TextView
+        android:id="@+id/screen_bar_graphic_progress_init"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintStart_toStartOf="@+id/screen_bar_graphic_linearprogress"
+        app:layout_constraintTop_toBottomOf="@+id/screen_bar_graphic_linearprogress"
+        tools:text="0" />
+
+    <TextView
+        android:id="@+id/screen_bar_graphic_progress_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/screen_bar_graphic_linearprogress"
+        app:layout_constraintTop_toBottomOf="@+id/screen_bar_graphic_linearprogress"
+        tools:text="100" />
+
+    <Button
+        android:id="@+id/screen_bar_graphic_btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/button_blue_primary"
+        android:padding="16dp"
+        android:text="Cancelar"
+        android:textAllCaps="true"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

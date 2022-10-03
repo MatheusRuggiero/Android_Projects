@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/screen_edit_buffer_bcd_valor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="80"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/screen_edit_buffer_bcd_operacoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@tools:sample/lorem" />
+
+    <TextView
+        android:id="@+id/screen_edit_buffer_bcd_operacoes"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="80"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/screen_edit_buffer_bcd_valor_ok"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_edit_buffer_bcd_valor"
+        tools:text="@tools:sample/lorem/random" />
+
+    <Button
+        android:id="@+id/screen_edit_buffer_bcd_valor_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/button_blue_primary"
+        android:padding="16dp"
+        android:text="@string/ok"
+        android:textAllCaps="true"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/screen_print_dtc_btn_cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/screen_print_dtc_btn_cancelar" />
+
+    <Button
+        android:id="@+id/screen_print_dtc_btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="@color/button_blue_primary"
+        android:padding="16dp"
+        android:text="@string/cancelar"
+        android:textAllCaps="true"
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

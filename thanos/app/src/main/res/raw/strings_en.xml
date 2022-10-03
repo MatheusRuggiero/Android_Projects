@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Thanos</string>
+    <string name="iniciar">Start</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="dispositivo">Device</string>
+    <string name="conexão">Connection</string>
+    <string name="position">Position: </string>
+    <string name="connector">Connector: </string>
+    <string name="connector_position">Connector Position: </string>
+
+    <string-array name="update_instructions">
+        <item> <br> 1. Connected to the internet.    </br> </item>
+        <item> <br> 2. Battery Fully Charged. </br> </item>
+        <item> <br> 3. Bluetooth is on.  </br> </item>
+        <item> <br> 4. Device paired with Rasther. </br> </item>
+        <item> <br> 5. Rasther is on.      </br> </item>
+    </string-array>
+
+    <string name="ok"> ok </string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="development_request">Development request</string>
+    <string name="reports">Reports</string>
+    <string name="diagnostic">Diagnosis</string>
+    <string name="devices">Devices</string>
+    <string name="connection">Connect</string>
+    <string name="excluido">Deleted</string>
+    <string name="not_found_item">Not found</string>
+    <string name="type_to_search">type it to search</string>
+    <string name="warning_update">Before continue, make sure that:</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Continue</string>
+    <string name="txt_checkbox_activity_user_license">Read and agree with the terms above</string>
+    <string name="placa">Vehicle Registration Plate:</string>
+
+    <string name="title_activity_ask_restart_rasther">Restart your Rasther</string>
+    <string name="content_activity_ask_restart_rasther">It was unable to comunicate with Rasther. Restart and try again.\n\n If the problem persist and the red light is blinking, click in Recover Logical interface.</string>
+    <string name="title_activity_upgrade">Update RastherAndroid</string>
+    <string name="firmware">Firmware</string>
+    <string name="txt_placa">PLATE :</string>
+    <string name="name">Name:</string>
+    <string name="nameHint">Name and Surname</string>
+
+    <string name="btn_recover_logical_interface">Recover logical interface</string>
+
+    <string name="back">Back</string>
+    <string name="email">E-mail:</string>
+    <string name="emailHint">E-mail:</string>
+    <string name="phone">Phone Number:</string>
+    <string name="phoneHint">Phone with area code</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="none">A</string>
+    <string name="leituras_title">Readings</string>
+    <string name="montadoras_title">AutoMaker</string>
+    <string name="dtc_title">Fault code</string>
+    <string name="analise_grafica_title">Graphic Analysis</string>
+    <string name="posicao_conector_title">Connector Position</string>
+    <string name="favoritos">Favorites</string>
+    <string name="parear">Pair</string>
+    <string name="historico">Histórico</string>
+    <string name="ultima_escolha">Last Choice</string>
+    <string name="nova_escolha">New Choice</string>
+    <string name="manualtec">Manualtec</string>
+    <string name="sair_diagnostico">Leave Diagnosis</string>
+    <string name="deseja_finalizar_diagnostico">Are you sure you want to finish diagnosis?</string>
+    <string name="confirmar">Confirm</string>
+    <string name="cancelar">Cancel</string>
+    <string name="descartar_selecao">Deselect All</string>
+    <string name="selecionar_todas_leituras">Select All</string>
+    <string name="salvar_no_relatorio">Save in Report</string>
+    <string name="criar_um_novo_relat_rio">Create a new report</string>
+    <string name="placa_do_carro">Vehicle registration Plate</string>
+    <string name="selecionar_um_relat_rio_existente">Select existing report</string>
+    <string name="apagar_mem_ria">Erase memory</string>
+    <string name="testeUnitario">testeUnitario</string>
+    <string name="download_file">Download File</string>
+    <string name="lista_de_relatorios">Report list</string>
+    <string name="connect_error">Error to connect with Rasther!</string>
+    <string name="informacoes">Information</string>
+    <string name="registro_de_produto">Product Registration</string>
+    <string name="permissoes_titulo">Permissions</string>
+    <string name="permissoes_descricao">For the application to work correctly, will be necessary to access some resources of the device.</string>
+    <string name="permissoes_politica_titulo">Tecnomotor Privacy Politics</string>
+    <string name="permissoes_politica_descicao">Tecnomotor company do not use or take any information of the users, all the permissions next is only for the application operate properly</string>
+    <string name="permissoes_localizacao_titulo">Enable Location</string>
+    <string name="permissoes_localizacao_descricao">Will be necessary to enable the Exact location, to find the VCI.</string>
+    <string name="permissoes_armazenamento_titulo">Enable Access to read and storage data</string>
+    <string name="permissoes_armazenamento_descricao">Will be necessary the application have access to devices storage, for save archives, for example: report or images.</string>
+    <string name="permissoes_blutooth_titulo">Enable Bluetooth</string>
+    <string name="permissoes_bluetooth_descricao">To find and to connect With the VCI will be necessary the bluetooth is activated.</string>
+    <string name="permissoes_finalizando_titulo">Almost There!</string>
+    <string name="permissoes_finalizando_descricao">Lets config your VCI.</string>
+    <string name="ativar_bluetooth">Enable Bluetooth</string>
+    <string name="liberar_permissao">RELEASE PERMITION</string>
+    <string name="proximo">Next</string>
+    <string name="localizar">Locate</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="spanish">Spanish</string>
+    <string name="english">English</string>
+    <string name="dados_da_oficina">Car Workshop Info</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="razao_social">Company Name:</string>
+    <string name="cnpj">EIN:</string>
+    <string name="atualizar">Update</string>
+    <string name="dispositivo_conectado">Connected device</string>
+    <string name="parear_por_bluetooth">Pair with Bluetooth</string>
+    <string name="atualizacao_da_vci">Update VCI</string>
+    <string name="notificar_sobre_atualizacoes">Notify new available updates</string>
+    <string name="ultima_atualizacao">Last Update:</string>
+    <string name="atualizar_agora">Update Now</string>
+    <string name="relatorio">Report</string>
+    <string name="exibir_dados_empresa">Show company info in the report</string>
+    <string name="exibir_numero_pagina">Show number of pages in the report</string>
+    <string name="exibir_data">Show time and date when printing the report</string>
+</resources>

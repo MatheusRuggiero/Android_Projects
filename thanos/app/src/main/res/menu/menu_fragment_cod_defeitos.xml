@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/cod_defeito_menu_item_remover"
+        android:icon="@drawable/ic_delete_white_24"
+        android:title="@string/apagar_mem_ria"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/cod_defeito_menu_item_report"
+        android:icon="@drawable/ic_report_white"
+        android:title="@string/salvar_no_relatorio"
+        app:showAsAction="ifRoom" />
+
+</menu>

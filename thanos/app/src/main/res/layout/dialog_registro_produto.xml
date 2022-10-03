@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/registro_produto_logo_tecnomotor"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:src="@drawable/logo_tecnomotor"
+        app:layout_constraintBottom_toBottomOf="@id/registro_produto_titulo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/registro_produto_titulo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/registro_produto_titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Registro do Produto - Online"
+        android:textAlignment="center"
+        android:textColor="@color/text_card_primary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/registro_produto_logo_tecnomotor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/registro_produto_view_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintStart_toStartOf="@id/registro_produto_titulo"
+        app:layout_constraintTop_toBottomOf="@id/registro_produto_titulo" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_produto_nome"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome Completo"
+        android:textColorHint="@color/button_blue_primary"
+        app:boxStrokeColor="@color/button_blue_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registro_produto_view_divider"
+        app:prefixTextColor="@color/button_blue_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_produto_input_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"
+            android:maxLength="100"
+            android:textAllCaps="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_produto_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="E-mail"
+        android:textColorHint="@color/button_blue_primary"
+        app:boxStrokeColor="@color/button_blue_primary"
+        app:layout_constraintStart_toStartOf="@+id/registro_produto_nome"
+        app:layout_constraintTop_toBottomOf="@+id/registro_produto_nome"
+        app:prefixTextColor="@color/button_blue_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_produto_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_produto_pais"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="País"
+        android:textColorHint="@color/button_blue_primary"
+        app:boxStrokeColor="@color/button_blue_primary"
+        app:layout_constraintStart_toStartOf="@id/registro_produto_email"
+        app:layout_constraintTop_toBottomOf="@id/registro_produto_email"
+        app:prefixTextColor="@color/button_blue_primary">
+
+        <AutoCompleteTextView
+            android:id="@+id/registro_produto_autocomplete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textAutoComplete"
+            tools:ignore="LabelFor" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_produto_telefone_ddi"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:hint="DDI"
+        android:maxWidth="5dp"
+        android:textColorHint="@color/button_blue_primary"
+        app:boxStrokeColor="@color/button_blue_primary"
+        app:layout_constraintEnd_toStartOf="@+id/registro_produto_telefone"
+        app:layout_constraintStart_toStartOf="@+id/registro_produto_pais"
+        app:layout_constraintTop_toBottomOf="@+id/registro_produto_pais"
+        app:prefixTextColor="@color/button_blue_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_produto_input_telefone_ddi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            tools:text="+55" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/registro_produto_telefone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Celular"
+        android:textColorHint="@color/button_blue_primary"
+        app:boxStrokeColor="@color/button_blue_primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/registro_produto_telefone_ddi"
+        app:layout_constraintTop_toTopOf="@id/registro_produto_telefone_ddi"
+        app:prefixTextColor="@color/button_blue_primary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/registro_produto_input_telefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:id="@+id/registro_produto_loading_spinner"
+        style="?android:progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminateTint="@color/loadding"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/registro_produto_botao_atualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/button_blue_primary"
+        android:padding="10dp"
+        android:text="Atualizar"
+        android:textAllCaps="true"
+        android:textColor="@color/text_primary"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registro_produto_telefone"
+        app:layout_constraintVertical_bias="1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

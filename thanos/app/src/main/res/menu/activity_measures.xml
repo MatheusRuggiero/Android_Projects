@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_save_screenshot"
+        android:icon="@drawable/ic_print_white_24"
+        app:showAsAction="always"
+        android:title="Print" />
+
+    <item
+        android:id="@+id/menu_measures_order"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:showAsAction="always"
+        android:title="Organizar Leituras" />
+
+    <item
+        android:id="@+id/graphs"
+        android:title="Gráficos" />
+
+    <item
+        android:id="@+id/reports"
+        android:title="Enviar Relatório" />
+
+</menu>

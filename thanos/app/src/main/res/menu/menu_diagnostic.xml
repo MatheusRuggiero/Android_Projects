@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_diagnostic_new"
+        android:title="@string/nova_escolha"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_adicionar_2" />
+
+    <item
+        android:id="@+id/menu_diagnostic_manualtec"
+        android:title="@string/manualtec"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_menu" />
+
+    <item
+        android:id="@+id/menu_diagnostic_favoritos"
+        android:title="@string/favoritos"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_favorites_white_24" />
+
+</menu>

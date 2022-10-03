@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_menu"
+    app:startDestination="@id/fragment_montadoras">
+
+    <fragment
+        android:id="@+id/fragment_montadoras"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.MontadorasFragment"
+        android:label="Montadoras"
+        tools:layout="@layout/fragment_montadoras">
+        <action
+            android:id="@+id/action_montadoras_to_veiculos"
+            app:destination="@id/fragment_veiculos"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_favoritos"
+            app:destination="@id/fragment_favoritos"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_historico"
+            app:destination="@id/fragment_historico"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadora_to_motorizacao"
+            app:destination="@id/fragment_motorizacao"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_tipoSistemas"
+            app:destination="@id/fragment_tipoSistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_sistemas"
+            app:destination="@id/fragment_sistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_conectores"
+            app:destination="@id/fragment_conectores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_montadoras_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_veiculos"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.VeiculosFragment"
+        android:label="Veículos"
+        tools:layout="@layout/fragment_veiculos">
+        <action
+            android:id="@+id/action_veiculos_to_motorizacao"
+            app:destination="@id/fragment_motorizacao"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_veiculos_to_tipoSistemas"
+            app:destination="@id/fragment_tipoSistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_veiculos_to_sistemas"
+            app:destination="@id/fragment_sistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_veiculos_to_conectores"
+            app:destination="@id/fragment_conectores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_veiculos_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_motorizacao"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.MotorizacaoFragment"
+        android:label="Motorizacao"
+        tools:layout="@layout/fragment_motorizacao">
+        <action
+            android:id="@+id/action_motorizacao_to_tipoSistemas"
+            app:destination="@id/fragment_tipoSistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_motorizacao_to_sistemas"
+            app:destination="@id/fragment_sistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_motorizacao_to_conectores"
+            app:destination="@id/fragment_conectores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_motorizacao_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_tipoSistemas"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.TipoSistemasFragment"
+        android:label="Tipo de Sistemas"
+        tools:layout="@layout/fragment_tipo_sistemas">
+        <action
+            android:id="@+id/action_tipoSistemas_to_sistemas"
+            app:destination="@id/fragment_sistemas"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tipoSistemas_to_conectores"
+            app:destination="@id/fragment_conectores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_tipoSistemas_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_sistemas"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.SistemasFragment"
+        android:label="Sistemas"
+        tools:layout="@layout/fragment_sistemas">
+        <action
+            android:id="@+id/action_sistemas_to_conectores"
+            app:destination="@id/fragment_conectores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_sistemas_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_conectores"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.ConectorFragment"
+        android:label="Conectores"
+        tools:layout="@layout/fragment_conectores">
+        <action
+            android:id="@+id/action_conectores_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_posicaoConector"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.AplicacaoConectorFragment"
+        android:label="Posição do Conector"
+        tools:layout="@layout/fragment_exibir_posicao_conectores">
+        <action
+            android:id="@+id/action_posicaoConector_to_compra"
+            app:destination="@+id/fragment_compra"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_compra"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.CompraFragment"
+        android:label="Solicitação de compra"
+        tools:layout="@layout/fragment_compra">
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_favoritos"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.FavoritosFragment"
+        android:label="Favoritos"
+        tools:layout="@layout/fragment_favoritos">
+        <action
+            android:id="@+id/action_favoritos_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_historico"
+        android:name="br.com.tecnomotor.thanos.ui.menu.fragments.HistoricoFragment"
+        android:label="Histórico de Escolha"
+        tools:layout="@layout/fragment_historico">
+        <action
+            android:id="@+id/action_historico_to_posicaoConector"
+            app:destination="@id/fragment_posicaoConector"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+</navigation>

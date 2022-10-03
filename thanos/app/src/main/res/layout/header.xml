@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/card_info"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:id="@+id/header_montadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="Montadora:"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/tv_montadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:textColor="@color/text_primary"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/header_montadora"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/header_montadora"
+                app:layout_constraintTop_toTopOf="@+id/header_montadora"
+                tools:text="VW" />
+
+            <TextView
+                android:id="@+id/header_modelo_motorizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="Modelo:"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_montadora"
+                app:layout_constraintStart_toEndOf="@id/tv_montadora"
+                app:layout_constraintTop_toTopOf="@id/tv_montadora" />
+
+            <TextView
+                android:id="@+id/tv_modelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@+id/header_modelo_motorizacao"
+                app:layout_constraintStart_toEndOf="@id/header_modelo_motorizacao"
+                app:layout_constraintTop_toTopOf="@id/header_modelo_motorizacao"
+                tools:text="GOL" />
+
+            <TextView
+                android:id="@+id/tv_separador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:text=" - "
+                android:textColor="@color/text_primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_modelo"
+                app:layout_constraintStart_toEndOf="@id/tv_modelo" />
+
+            <TextView
+                android:id="@+id/tv_motorizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/text_primary"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@id/tv_modelo"
+                app:layout_constraintStart_toEndOf="@id/tv_separador"
+                tools:text="1.6" />
+
+            <TextView
+                android:id="@+id/header_sistema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sistema:"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/header_montadora"
+                app:layout_constraintTop_toBottomOf="@id/header_montadora" />
+
+            <TextView
+                android:id="@+id/tv_sistema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/text_primary"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="@id/header_sistema"
+                app:layout_constraintStart_toEndOf="@id/header_sistema"
+                app:layout_constraintTop_toTopOf="@id/header_sistema"
+                tools:text="Multec" />
+
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

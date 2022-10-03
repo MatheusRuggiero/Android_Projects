@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".fragment_car_workshop_information"
+    >
+
+    
+
+    <EditText
+        android:id="@+id/editText_RazaoSocial"
+        style="@style/edit_text"
+        android:layout_marginTop="16dp"
+        android:hint="Razão Social"
+        android:inputType="textAutoComplete"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editText_CNPJ"
+        style="@style/edit_text"
+        android:hint="CNPJ"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_RazaoSocial"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editText_Site"
+        style="@style/edit_text"
+        android:hint="Site"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_CNPJ"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editText_Email"
+        style="@style/edit_text"
+        android:hint="e-mail"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Site"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editText_Telefone"
+        style="@style/edit_text"
+        android:hint="Telefone"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Email"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/editText_Endereco"
+        style="@style/edit_text"
+        android:hint="Endereco"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Telefone"
+        ></EditText>
+
+    <Button
+        style="@style/edit_text"
+        app:layout_constraintStart_toStartOf="@+id/conteinerComponents"
+        app:layout_constraintEnd_toEndOf="@+id/conteinerComponents"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Endereco"
+        android:text="Salvar"
+        ></Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

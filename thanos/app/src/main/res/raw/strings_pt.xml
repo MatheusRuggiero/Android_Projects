@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">Thanos</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="dispositivo">Dispositivo</string>
+    <string name="conexão">Conexão</string>
+    <string name="position">Posição: </string>
+    <string name="connector">Conector: </string>
+    <string name="connector_position">Posição Conector: </string>
+
+    <string-array name="update_instructions">
+        <item> <br> 1. Está conectado à internet.    </br> </item>
+        <item> <br> 2. Está com a bateria carregada. </br> </item>
+        <item> <br> 3. Está com o bluetooth ligado.  </br> </item>
+        <item> <br> 4. Está pareado com seu Rasther. </br> </item>
+        <item> <br> 5. Seu Rasther está ligado.      </br> </item>
+    </string-array>
+
+    <string name="ok"> ok </string>
+    <string name="about">Sobre</string>
+    <string name="settings">Configurações</string>
+    <string name="development_request">Solicitação de Desenvolvimento</string>
+    <string name="reports">Relatórios</string>
+    <string name="diagnostic">Diagnóstico</string>
+    <string name="devices">Dispositivos</string>
+    <string name="connection">Conectar</string>
+    <string name="excluido">excluido</string>
+    <string name="not_found_item">Nenhum item encontrado para realizar busca.</string>
+    <string name="type_to_search">Digite para pesquisar.</string>
+    <string name="warning_update">Antes de continuar, certifique-se de que:</string>
+    <string name="pause">Pausar</string>
+    <string name="resume">Continuar</string>
+    <string name="txt_checkbox_activity_user_license">Li e concordo com as condições dos termos de uso desse programa</string>
+    <string name="placa">Placa:</string>
+
+    <string name="title_activity_ask_restart_rasther">Reinicie o equipamento</string>
+    <string name="content_activity_ask_restart_rasther">Não foi possível comunicar com o equipamento. Reinicie o Rasther e tente novamente.\n\nCaso o problema persista e a luz vermelha de status esteja piscando, clique em Recuperar a Interface Lógica.</string>
+    <string name="title_activity_upgrade">Atualização RastherAndroid</string>
+    <string name="firmware">Firmware</string>
+    <string name="txt_placa">PLACA :</string>
+    <string name="name">Nome:</string>
+    <string name="nameHint">Nome e sobrenome</string>
+
+    <string name="btn_recover_logical_interface">Recuperar Interface Lógica</string>
+
+    <string name="back">Voltar</string>
+    <string name="email">E-mail:</string>
+    <string name="emailHint">E-mail:</string>
+    <string name="phone">Telefone:</string>
+    <string name="phoneHint">Telefone com código de área</string>
+
+    <string name="cancel">Cancelar</string>
+    <string name="none">A</string>
+    <string name="leituras_title">Leituras</string>
+    <string name="montadoras_title">Montadoras</string>
+    <string name="dtc_title">Códigos de Defeito</string>
+    <string name="analise_grafica_title">Análise Gráfica</string>
+    <string name="posicao_conector_title">Posição do Conector</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="parear">Parear</string>
+    <string name="historico">Histórico</string>
+    <string name="ultima_escolha">Última Escolha</string>
+    <string name="nova_escolha">Nova Escolha</string>
+    <string name="manualtec">Manualtec</string>
+    <string name="sair_diagnostico">Sair do Diagnostico</string>
+    <string name="deseja_finalizar_diagnostico">Deseja realmente finalizar o diagnóstico?</string>
+    <string name="confirmar">Confirmar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="descartar_selecao">Descartar Seleção</string>
+    <string name="selecionar_todas_leituras">Selecionar todas leituras</string>
+    <string name="salvar_no_relatorio">Salvar no relatório</string>
+    <string name="criar_um_novo_relat_rio">Criar um novo relatório</string>
+    <string name="placa_do_carro">Placa do Carro</string>
+    <string name="selecionar_um_relat_rio_existente">Selecionar um relatório existente</string>
+    <string name="apagar_mem_ria">Apagar memória</string>
+    <string name="testeUnitario">testeUnitario</string>
+    <string name="download_file">Download File</string>
+    <string name="lista_de_relatorios">Lista de Relatórios</string>
+    <string name="connect_error">Erro ao conectar com o equipamento!</string>
+    <string name="informacoes">Informações</string>
+    <string name="registro_de_produto">Registro de Produto</string>
+    <string name="permissoes_titulo">Permissões</string>
+    <string name="permissoes_descricao">Para que o aplicativo funcione corretamente será necessário que o aplicativo acesse alguns recursos do seu dipositivo móvel.</string>
+    <string name="permissoes_politica_titulo">Política Tecnomotor</string>
+    <string name="permissoes_politica_descicao">Nós da Tecnomotor não utilizamos e não coletamos nenhum tipo de informação confidencial, as permissões a seguir são apenas para o funcionamento adequado do aplicativo</string>
+    <string name="permissoes_localizacao_titulo">Habilitar Localização</string>
+    <string name="permissoes_localizacao_descricao">Será necessário que o aplicativo acesse sua localização EXATA para localizar sua VCI.</string>
+    <string name="permissoes_armazenamento_titulo">Habilitar Acesso de leitura e armazenamento de dados</string>
+    <string name="permissoes_armazenamento_descricao">Será necessário que o aplicativo acesse o armazenamento do seu dispositivo, para poder salvar certos arquivos, como por exemplo imagens e relatórios.</string>
+    <string name="permissoes_blutooth_titulo">Habilitar Bluetooth</string>
+    <string name="permissoes_bluetooth_descricao">Para localizar e conectar com a VCI é necessário que o bluetooth esteja ativado.</string>
+    <string name="permissoes_finalizando_titulo">Quase lá!</string>
+    <string name="permissoes_finalizando_descricao">Vamos configurar a VCI.</string>
+    <string name="ativar_bluetooth">Ativar bluetooth</string>
+    <string name="liberar_permissao">LIBERAR PERMISSÃO</string>
+    <string name="proximo">Próximo</string>
+    <string name="localizar">Localizar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="spanish">Espanhol</string>
+    <string name="english">Inglês</string>
+    <string name="portuguese">Português</string>
+    <string name="dados_da_oficina">Dados da Oficina</string>
+    <string name="razao_social">Razão Social:</string>
+    <string name="cnpj">CNPJ:</string>
+    <string name="atualizar">Atualizar</string>
+    <string name="dispositivo_conectado">Dispositivo conectado</string>
+    <string name="parear_por_bluetooth">Parear por Bluetooth</string>
+    <string name="atualizacao_da_vci">Atualização da VCI</string>
+    <string name="notificar_sobre_atualizacoes">Notificar sobre novas atualizações quando disponível</string>
+    <string name="ultima_atualizacao">Última atualização:</string>
+    <string name="atualizar_agora">Atualizar agora</string>
+    <string name="relatorio">Relatório</string>
+    <string name="exibir_dados_empresa">Exibir dados da empresa no relatório</string>
+    <string name="exibir_numero_pagina">Exibir quantidade de páginas no relatório</string>
+    <string name="exibir_data">Exibir data e hora na impressão do relatório</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_analiseGrafica_screenshot"
+        android:title="Print"
+        android:icon="@drawable/ic_print_white_24"
+        android:orderInCategory="101"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/pause"
+        android:icon="@drawable/ic_stop_1"
+        android:orderInCategory="102"
+        android:title="@string/pause"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/resume"
+        android:icon="@drawable/ic_baseline_play_24"
+        android:orderInCategory="103"
+        android:title="@string/resume"
+        app:showAsAction="always" />
+
+</menu>

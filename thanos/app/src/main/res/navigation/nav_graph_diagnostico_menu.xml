@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_diagnostico_menu"
+    app:startDestination="@id/diagnostico">
+
+    <fragment
+        android:id="@+id/diagnostico"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.DiagnosticoFragment"
+        tools:layout="@layout/fragment_diagnostico">
+        <action
+            android:id="@+id/action_diagnostico_to_codDefeito"
+            app:destination="@id/codDefeito"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_diagnostico_to_leituras"
+            app:destination="@id/leituras"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_diagnostico_to_analiseGrafica"
+            app:destination="@id/analiseGrafica"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_diagnostico_to_identificacaoEcu"
+            app:destination="@id/identificacaoEcu"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_diagnostico_to_atuadores"
+            app:destination="@id/atuadores"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_diagnostico_to_programacoes"
+            app:destination="@id/programacoes"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_diagnostico_to_ajustes"
+            app:destination="@id/ajustes"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/codDefeito"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.CodDefeitoFragment"
+        tools:layout="@layout/fragment_codigo_defeito">
+    </fragment>
+    <fragment
+        android:id="@+id/leituras"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.LeiturasFragment"
+        tools:layout="@layout/fragment_leituras"/>
+    <fragment
+        android:id="@+id/analiseGrafica"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.AnaliseGraficaFragment"
+        tools:layout="@layout/fragment_analise_grafica">
+    </fragment>
+    <fragment
+        android:id="@+id/atuadores"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.SubMenusFragment"
+        tools:layout="@layout/fragment_atuadores"/>
+    <fragment
+        android:id="@+id/ajustes"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.AjustesFragment"
+        tools:layout="@layout/fragment_ajustes"/>
+    <fragment
+        android:id="@+id/programacoes"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.ProgramacoesFragment"
+        tools:layout="@layout/fragment_programacoes"/>
+    <fragment
+        android:id="@+id/identificacaoEcu"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.EcuFragment"
+        tools:layout="@layout/fragment_ecu">
+    </fragment>
+    <fragment
+        android:id="@+id/selectRelatorio"
+        android:name="br.com.tecnomotor.thanos.ui.diagnostico.fragments.SelecionaRelatorioFragment"
+        tools:layout="@layout/fragment_lista_relatorios" />
+    <action android:id="@+id/action_global_selectRelatorio" app:destination="@id/selectRelatorio" />
+
+</navigation>

@@ -1,0 +1,1016 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "a972bfaf7ea0cda5c150754a7e64ee8d",
+    "entities": [
+      {
+        "tableName": "ecuidentifications_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ECUIDENTIFICATIONS_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `ECUIDENTIFICATIONS_REPORTS_ID` INTEGER NOT NULL, `ECUIDENTIFICATIONS_MENSAGEM` TEXT, `ECUIDENTIFICATIONS_VALOR` TEXT, `ECUIDENTIFICATIONS_DATAHORA` TEXT, FOREIGN KEY(`ECUIDENTIFICATIONS_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "ECUIDENTIFICATIONS_ID",
+            "columnName": "ECUIDENTIFICATIONS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ECUIDENTIFICATIONS_REPORTS_ID",
+            "columnName": "ECUIDENTIFICATIONS_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ECUIDENTIFICATIONS_MENSAGEM",
+            "columnName": "ECUIDENTIFICATIONS_MENSAGEM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ECUIDENTIFICATIONS_VALOR",
+            "columnName": "ECUIDENTIFICATIONS_VALOR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ECUIDENTIFICATIONS_DATAHORA",
+            "columnName": "ECUIDENTIFICATIONS_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ECUIDENTIFICATIONS_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "ECUIDENTIFICATIONS_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "favorites_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `FAVORITES_AUTOMAKER_ID` TEXT, `FAVORITES_AUTOMAKER_NAME` TEXT, `FAVORITES_AUTOMAKER_IMG_PATH` TEXT, `FAVORITES_IS_MOTORCYCLE_FLAG` TEXT, `FAVORITES_VEHICLE_ID` TEXT, `FAVORITES_VEHICLE_NAME` TEXT, `FAVORITES_HAS_ENGINE_FLAG` TEXT, `FAVORITES_ENGINE_ID` TEXT, `FAVORITES_ENGINE_NAME` TEXT, `FAVORITES_SYSTEM_TYPE_ID` TEXT, `FAVORITES_SYSTEM_TYPE_NAME` TEXT, `FAVORITES_SYSTEM_TYPE_IMG_PATH` TEXT, `FAVORITES_SYSTEM_ID` TEXT, `FAVORITES_SYSTEM_NAME` TEXT, `FAVORITES_CONNECTOR_ID` TEXT, `FAVORITES_CONNECTOR_NAME` TEXT, `FAVORITES_CONNECTOR_POS` TEXT, `FAVORITES_PIN_X` TEXT, `FAVORITES_PIN_Y` TEXT, `FAVORITES_APLID` TEXT, `FAVORITES_SYSTEM_TYPE_FLAG` TEXT, `FAVORITES_MODULE_XML` TEXT, `FAVORITES_IS_D0` TEXT, `FAVORITES_APLREP` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "FAVORITES_AUTOMAKER_ID",
+            "columnName": "FAVORITES_AUTOMAKER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_AUTOMAKER_NAME",
+            "columnName": "FAVORITES_AUTOMAKER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_AUTOMAKER_IMG_PATH",
+            "columnName": "FAVORITES_AUTOMAKER_IMG_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_IS_MOTORCYCLE_FLAG",
+            "columnName": "FAVORITES_IS_MOTORCYCLE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_VEHICLE_ID",
+            "columnName": "FAVORITES_VEHICLE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_VEHICLE_NAME",
+            "columnName": "FAVORITES_VEHICLE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_HAS_ENGINE_FLAG",
+            "columnName": "FAVORITES_HAS_ENGINE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_ENGINE_ID",
+            "columnName": "FAVORITES_ENGINE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_ENGINE_NAME",
+            "columnName": "FAVORITES_ENGINE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_TYPE_ID",
+            "columnName": "FAVORITES_SYSTEM_TYPE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_TYPE_NAME",
+            "columnName": "FAVORITES_SYSTEM_TYPE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_TYPE_IMG_PATH",
+            "columnName": "FAVORITES_SYSTEM_TYPE_IMG_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_ID",
+            "columnName": "FAVORITES_SYSTEM_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_NAME",
+            "columnName": "FAVORITES_SYSTEM_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_CONNECTOR_ID",
+            "columnName": "FAVORITES_CONNECTOR_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_CONNECTOR_NAME",
+            "columnName": "FAVORITES_CONNECTOR_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_CONNECTOR_POS",
+            "columnName": "FAVORITES_CONNECTOR_POS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_PIN_X",
+            "columnName": "FAVORITES_PIN_X",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_PIN_Y",
+            "columnName": "FAVORITES_PIN_Y",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_APLID",
+            "columnName": "FAVORITES_APLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_SYSTEM_TYPE_FLAG",
+            "columnName": "FAVORITES_SYSTEM_TYPE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_MODULE_XML",
+            "columnName": "FAVORITES_MODULE_XML",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_IS_D0",
+            "columnName": "FAVORITES_IS_D0",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "FAVORITES_APLREP",
+            "columnName": "FAVORITES_APLREP",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "graphics_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`GRAPHICS_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `GRAPHICS_REPORTS_ID` INTEGER NOT NULL, `GRAPHICS_NOME` TEXT, `GRAPHICS_IMG` BLOB, `GRAPHICS_DATAHORA` TEXT, FOREIGN KEY(`GRAPHICS_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "GRAPHICS_ID",
+            "columnName": "GRAPHICS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GRAPHICS_REPORTS_ID",
+            "columnName": "GRAPHICS_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "GRAPHICS_NOME",
+            "columnName": "GRAPHICS_NOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "GRAPHICS_IMG",
+            "columnName": "GRAPHICS_IMG",
+            "affinity": "BLOB",
+            "notNull": false
+          },
+          {
+            "fieldPath": "GRAPHICS_DATAHORA",
+            "columnName": "GRAPHICS_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "GRAPHICS_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "GRAPHICS_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "history_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `HISTORY_AUTOMAKER_ID` TEXT, `HISTORY_AUTOMAKER_NAME` TEXT, `HISTORY_AUTOMAKER_IMG_PATH` TEXT, `HISTORY_IS_MOTORCYCLE_FLAG` TEXT, `HISTORY_VEHICLE_ID` TEXT, `HISTORY_VEHICLE_NAME` TEXT, `HISTORY_HAS_ENGINE_FLAG` TEXT, `HISTORY_ENGINE_ID` TEXT, `HISTORY_ENGINE_NAME` TEXT, `HISTORY_SYSTEM_TYPE_ID` TEXT, `HISTORY_SYSTEM_TYPE_NAME` TEXT, `HISTORY_SYSTEM_TYPE_IMG_PATH` TEXT, `HISTORY_SYSTEM_ID` TEXT, `HISTORY_SYSTEM_NAME` TEXT, `HISTORY_CONNECTOR_ID` TEXT, `HISTORY_CONNECTOR_NAME` TEXT, `HISTORY_CONNECTOR_POS` TEXT, `HISTORY_PIN_X` TEXT, `HISTORY_PIN_Y` TEXT, `HISTORY_APLID` TEXT, `HISTORY_SYSTEM_TYPE_FLAG` TEXT, `HISTORY_MODULE_XML` TEXT, `HISTORY_IS_D0` TEXT, `HISTORY_APLREP` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "HISTORY_AUTOMAKER_ID",
+            "columnName": "HISTORY_AUTOMAKER_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_AUTOMAKER_NAME",
+            "columnName": "HISTORY_AUTOMAKER_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_AUTOMAKER_IMG_PATH",
+            "columnName": "HISTORY_AUTOMAKER_IMG_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_IS_MOTORCYCLE_FLAG",
+            "columnName": "HISTORY_IS_MOTORCYCLE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_VEHICLE_ID",
+            "columnName": "HISTORY_VEHICLE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_VEHICLE_NAME",
+            "columnName": "HISTORY_VEHICLE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_HAS_ENGINE_FLAG",
+            "columnName": "HISTORY_HAS_ENGINE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_ENGINE_ID",
+            "columnName": "HISTORY_ENGINE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_ENGINE_NAME",
+            "columnName": "HISTORY_ENGINE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_TYPE_ID",
+            "columnName": "HISTORY_SYSTEM_TYPE_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_TYPE_NAME",
+            "columnName": "HISTORY_SYSTEM_TYPE_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_TYPE_IMG_PATH",
+            "columnName": "HISTORY_SYSTEM_TYPE_IMG_PATH",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_ID",
+            "columnName": "HISTORY_SYSTEM_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_NAME",
+            "columnName": "HISTORY_SYSTEM_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_CONNECTOR_ID",
+            "columnName": "HISTORY_CONNECTOR_ID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_CONNECTOR_NAME",
+            "columnName": "HISTORY_CONNECTOR_NAME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_CONNECTOR_POS",
+            "columnName": "HISTORY_CONNECTOR_POS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_PIN_X",
+            "columnName": "HISTORY_PIN_X",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_PIN_Y",
+            "columnName": "HISTORY_PIN_Y",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_APLID",
+            "columnName": "HISTORY_APLID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_SYSTEM_TYPE_FLAG",
+            "columnName": "HISTORY_SYSTEM_TYPE_FLAG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_MODULE_XML",
+            "columnName": "HISTORY_MODULE_XML",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_IS_D0",
+            "columnName": "HISTORY_IS_D0",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "HISTORY_APLREP",
+            "columnName": "HISTORY_APLREP",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "measures_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`MEASURES_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `MEASURES_REPORTS_ID` INTEGER NOT NULL, `MEASURES_TIPO` TEXT, `MEASURES_NOME` TEXT, `MEASURES_MINIMO` TEXT, `MEASURES_MAXIMO` TEXT, `MEASURES_VALOR` TEXT, `MEASURES_UNIDADE` TEXT, `MEASURES_DATAHORA` TEXT, FOREIGN KEY(`MEASURES_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "MEASURES_ID",
+            "columnName": "MEASURES_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "MEASURES_REPORTS_ID",
+            "columnName": "MEASURES_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "MEASURES_TIPO",
+            "columnName": "MEASURES_TIPO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_NOME",
+            "columnName": "MEASURES_NOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_MINIMO",
+            "columnName": "MEASURES_MINIMO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_MAXIMO",
+            "columnName": "MEASURES_MAXIMO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_VALOR",
+            "columnName": "MEASURES_VALOR",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_UNIDADE",
+            "columnName": "MEASURES_UNIDADE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MEASURES_DATAHORA",
+            "columnName": "MEASURES_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "MEASURES_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "MEASURES_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "reports_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`REPORTS_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `REPORTS_MONNOME` TEXT, `REPORTS_VEINOME` TEXT, `REPORTS_MOTNOME` TEXT, `REPORTS_TIPONOME` TEXT, `REPORTS_SISNOME` TEXT, `REPORTS_SISID` INTEGER, `REPORTS_SISTIPOID` INTEGER, `REPORTS_PLACA` TEXT, `REPORTS_DATAHORACRIACAO` TEXT, `REPORTS_DATAHORAALTERACAO` TEXT, `REPORTS_PLATAFORMA` TEXT, `REPORTS_VERSAO` TEXT, `REPORTS_VERSAORASTHERANDROID` TEXT, `REPORTS_NUMSERIE` TEXT, `REPORTS_DELETED` INTEGER NOT NULL DEFAULT false, `REPORTS_VEHICLE_TYPE` INTEGER, `REPORTS_OBSERVATION` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "REPORTS_ID",
+            "columnName": "REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "REPORTS_MONNOME",
+            "columnName": "REPORTS_MONNOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_VEINOME",
+            "columnName": "REPORTS_VEINOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_MOTNOME",
+            "columnName": "REPORTS_MOTNOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_TIPONOME",
+            "columnName": "REPORTS_TIPONOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_SISNOME",
+            "columnName": "REPORTS_SISNOME",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_SISID",
+            "columnName": "REPORTS_SISID",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_SISTIPOID",
+            "columnName": "REPORTS_SISTIPOID",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_PLACA",
+            "columnName": "REPORTS_PLACA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_DATAHORACRIACAO",
+            "columnName": "REPORTS_DATAHORACRIACAO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_DATAHORAALTERACAO",
+            "columnName": "REPORTS_DATAHORAALTERACAO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_PLATAFORMA",
+            "columnName": "REPORTS_PLATAFORMA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_VERSAO",
+            "columnName": "REPORTS_VERSAO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_VERSAORASTHERANDROID",
+            "columnName": "REPORTS_VERSAORASTHERANDROID",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_NUMSERIE",
+            "columnName": "REPORTS_NUMSERIE",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_DELETED",
+            "columnName": "REPORTS_DELETED",
+            "affinity": "INTEGER",
+            "notNull": true,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "REPORTS_VEHICLE_TYPE",
+            "columnName": "REPORTS_VEHICLE_TYPE",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "REPORTS_OBSERVATION",
+            "columnName": "REPORTS_OBSERVATION",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "REPORTS_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "troublecodes_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`TROUBLECODES_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `TROUBLECODES_REPORTS_ID` INTEGER NOT NULL, `TROUBLECODES_CODIGO` TEXT, `TROUBLECODES_DESCRICAO` TEXT, `TROUBLECODES_SINTOMA` TEXT, `TROUBLECODES_STATUS` TEXT, `TROUBLECODES_DATAHORA` TEXT, FOREIGN KEY(`TROUBLECODES_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "TROUBLECODES_ID",
+            "columnName": "TROUBLECODES_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TROUBLECODES_REPORTS_ID",
+            "columnName": "TROUBLECODES_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "TROUBLECODES_CODIGO",
+            "columnName": "TROUBLECODES_CODIGO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TROUBLECODES_DESCRICAO",
+            "columnName": "TROUBLECODES_DESCRICAO",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TROUBLECODES_SINTOMA",
+            "columnName": "TROUBLECODES_SINTOMA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TROUBLECODES_STATUS",
+            "columnName": "TROUBLECODES_STATUS",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "TROUBLECODES_DATAHORA",
+            "columnName": "TROUBLECODES_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "TROUBLECODES_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "TROUBLECODES_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "under_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`UNDER_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `UNDER_REPORTS_ID` INTEGER NOT NULL, `UNDER_VALUE_DE` INTEGER, `UNDER_VALUE_DD` INTEGER, `UNDER_VALUE_TE` INTEGER, `UNDER_VALUE_TD` INTEGER, `UNDER_VALUE_DIFD` INTEGER, `UNDER_VALUE_DIFT` INTEGER, `UNDER_D_RESULT` INTEGER, `UNDER_T_RESULT` INTEGER, `UNDER_DE_RESULT` INTEGER, `UNDER_DD_RESULT` INTEGER, `UNDER_TE_RESULT` INTEGER, `UNDER_TD_RESULT` INTEGER, `UNDER_DATAHORA` TEXT, `UNDER_OBSERVATION` TEXT, `UNDER_VALUE_DIF_EIXO` INTEGER, `UNDER_DIF_EIXO_RESULT` INTEGER, `UNDER_TES_SUS_PADRAO` INTEGER DEFAULT true, `UNDER_TES_DIF_SUS_PADRAO` INTEGER DEFAULT true, `UNDER_TES_DIF_EIXO_PADRAO` INTEGER DEFAULT true, `UNDER_TES_SUS_LIM_APROVADO` INTEGER, `UNDER_TES_SUS_LIM_REPROVADO` INTEGER, `UNDER_TES_DIF_SUS_LIM_APROVADO` INTEGER, `UNDER_TES_DIF_SUS_LIM_REPROVADO` INTEGER, `UNDER_TES_DIF_EIXO_LIM_APROVADO` INTEGER, `UNDER_TES_DIF_EIXO_LIM_REPROVADO` INTEGER, FOREIGN KEY(`UNDER_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "UNDER_ID",
+            "columnName": "UNDER_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "UNDER_REPORTS_ID",
+            "columnName": "UNDER_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "UNDER_VALUE_DE",
+            "columnName": "UNDER_VALUE_DE",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_DD",
+            "columnName": "UNDER_VALUE_DD",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_TE",
+            "columnName": "UNDER_VALUE_TE",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_TD",
+            "columnName": "UNDER_VALUE_TD",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_DIFD",
+            "columnName": "UNDER_VALUE_DIFD",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_DIFT",
+            "columnName": "UNDER_VALUE_DIFT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_D_RESULT",
+            "columnName": "UNDER_D_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_T_RESULT",
+            "columnName": "UNDER_T_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_DE_RESULT",
+            "columnName": "UNDER_DE_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_DD_RESULT",
+            "columnName": "UNDER_DD_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TE_RESULT",
+            "columnName": "UNDER_TE_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TD_RESULT",
+            "columnName": "UNDER_TD_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_DATAHORA",
+            "columnName": "UNDER_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_OBSERVATION",
+            "columnName": "UNDER_OBSERVATION",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_VALUE_DIF_EIXO",
+            "columnName": "UNDER_VALUE_DIF_EIXO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_DIF_EIXO_RESULT",
+            "columnName": "UNDER_DIF_EIXO_RESULT",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_SUS_PADRAO",
+            "columnName": "UNDER_TES_SUS_PADRAO",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "true"
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_SUS_PADRAO",
+            "columnName": "UNDER_TES_DIF_SUS_PADRAO",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "true"
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_EIXO_PADRAO",
+            "columnName": "UNDER_TES_DIF_EIXO_PADRAO",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "true"
+          },
+          {
+            "fieldPath": "UNDER_TES_SUS_LIM_APROVADO",
+            "columnName": "UNDER_TES_SUS_LIM_APROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_SUS_LIM_REPROVADO",
+            "columnName": "UNDER_TES_SUS_LIM_REPROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_SUS_LIM_APROVADO",
+            "columnName": "UNDER_TES_DIF_SUS_LIM_APROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_SUS_LIM_REPROVADO",
+            "columnName": "UNDER_TES_DIF_SUS_LIM_REPROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_EIXO_LIM_APROVADO",
+            "columnName": "UNDER_TES_DIF_EIXO_LIM_APROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNDER_TES_DIF_EIXO_LIM_REPROVADO",
+            "columnName": "UNDER_TES_DIF_EIXO_LIM_REPROVADO",
+            "affinity": "INTEGER",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "UNDER_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "UNDER_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "visual_inspection_t",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`VI_ID` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `VI_REPORTS_ID` INTEGER NOT NULL, `VI_AMORTECEDORES_DIANTEIROS` INTEGER DEFAULT false, `VI_AMORTECEDORES_TRASEIROS` INTEGER DEFAULT false, `VI_ROLAMENTOS` INTEGER DEFAULT false, `VI_BANDEJAS` INTEGER DEFAULT false, `VI_BUCHAS` INTEGER DEFAULT false, `VI_TERMINAIS` INTEGER DEFAULT false, `VI_COXINS` INTEGER DEFAULT false, `VI_PIVOS` INTEGER DEFAULT false, `VI_DATAHORA` TEXT, FOREIGN KEY(`VI_REPORTS_ID`) REFERENCES `reports_t`(`REPORTS_ID`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "VI_ID",
+            "columnName": "VI_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VI_REPORTS_ID",
+            "columnName": "VI_REPORTS_ID",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VI_AMORTECEDORES_DIANTEIROS",
+            "columnName": "VI_AMORTECEDORES_DIANTEIROS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_AMORTECEDORES_TRASEIROS",
+            "columnName": "VI_AMORTECEDORES_TRASEIROS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_ROLAMENTOS",
+            "columnName": "VI_ROLAMENTOS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_BANDEJAS",
+            "columnName": "VI_BANDEJAS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_BUCHAS",
+            "columnName": "VI_BUCHAS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_TERMINAIS",
+            "columnName": "VI_TERMINAIS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_COXINS",
+            "columnName": "VI_COXINS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_PIVOS",
+            "columnName": "VI_PIVOS",
+            "affinity": "INTEGER",
+            "notNull": false,
+            "defaultValue": "false"
+          },
+          {
+            "fieldPath": "VI_DATAHORA",
+            "columnName": "VI_DATAHORA",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "VI_ID"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": [
+          {
+            "table": "reports_t",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "VI_REPORTS_ID"
+            ],
+            "referencedColumns": [
+              "REPORTS_ID"
+            ]
+          }
+        ]
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'a972bfaf7ea0cda5c150754a7e64ee8d')"
+    ]
+  }
+}

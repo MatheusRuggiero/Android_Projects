@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <group
+        android:id="@+id/menu_item_grupo_selecao"
+        >
+        <item
+            android:id="@+id/menu_item_descartar_selecao"
+            android:icon="@drawable/ic_outline_cancel_24"
+            android:title="@string/descartar_selecao"
+            android:titleCondensed="Descartar Seleção"
+            app:showAsAction="always" />
+
+        <item
+            android:id="@+id/menu_item_selecionar_todos"
+            android:icon="@drawable/ic_checklist_24"
+            android:title="@string/selecionar_todas_leituras"
+            app:showAsAction="always" />
+    </group>
+
+    <item
+        android:id="@+id/menu_item_diagnostic_report"
+        android:icon="@drawable/ic_report_white"
+        android:title="@string/salvar_no_relatorio"
+        app:showAsAction="ifRoom" />
+
+</menu>

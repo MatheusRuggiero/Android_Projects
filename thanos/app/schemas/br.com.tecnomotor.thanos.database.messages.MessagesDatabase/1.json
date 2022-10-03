@@ -1,0 +1,574 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "cccf887c79c06b361ddc0bb618c7f90d",
+    "entities": [
+      {
+        "tableName": "CONDDTC_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `CONDDTC_IDX` INTEGER, `CONDDTC_PT_SHORT` TEXT, `CONDDTC_PT_MED` TEXT, `CONDDTC_PT_LONG` TEXT, `CONDDTC_ES_SHORT` TEXT, `CONDDTC_ES_MED` TEXT, `CONDDTC_ES_LONG` TEXT, `CONDDTC_EN_SHORT` TEXT, `CONDDTC_EN_MED` TEXT, `CONDDTC_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "CONDDTC_IDX",
+            "columnName": "CONDDTC_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_PT_SHORT",
+            "columnName": "CONDDTC_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_PT_MED",
+            "columnName": "CONDDTC_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_PT_LONG",
+            "columnName": "CONDDTC_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_ES_SHORT",
+            "columnName": "CONDDTC_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_ES_MED",
+            "columnName": "CONDDTC_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_ES_LONG",
+            "columnName": "CONDDTC_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_EN_SHORT",
+            "columnName": "CONDDTC_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_EN_MED",
+            "columnName": "CONDDTC_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "CONDDTC_EN_LONG",
+            "columnName": "CONDDTC_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "DTC_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `DTC_IDX` INTEGER, `DTC_PT_SHORT` TEXT, `DTC_PT_MED` TEXT, `DTC_PT_LONG` TEXT, `DTC_ES_SHORT` TEXT, `DTC_ES_MED` TEXT, `DTC_ES_LONG` TEXT, `DTC_EN_SHORT` TEXT, `DTC_EN_MED` TEXT, `DTC_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "DTC_IDX",
+            "columnName": "DTC_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_PT_SHORT",
+            "columnName": "DTC_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_PT_MED",
+            "columnName": "DTC_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_PT_LONG",
+            "columnName": "DTC_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_ES_SHORT",
+            "columnName": "DTC_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_ES_MED",
+            "columnName": "DTC_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_ES_LONG",
+            "columnName": "DTC_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_EN_SHORT",
+            "columnName": "DTC_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_EN_MED",
+            "columnName": "DTC_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "DTC_EN_LONG",
+            "columnName": "DTC_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "INFO_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `INFO_IDX` INTEGER, `INFO_PT_SHORT` TEXT, `INFO_PT_MED` TEXT, `INFO_PT_LONG` TEXT, `INFO_ES_SHORT` TEXT, `INFO_ES_MED` TEXT, `INFO_ES_LONG` TEXT, `INFO_EN_SHORT` TEXT, `INFO_EN_MED` TEXT, `INFO_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "INFO_IDX",
+            "columnName": "INFO_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_PT_SHORT",
+            "columnName": "INFO_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_PT_MED",
+            "columnName": "INFO_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_PT_LONG",
+            "columnName": "INFO_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_ES_SHORT",
+            "columnName": "INFO_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_ES_MED",
+            "columnName": "INFO_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_ES_LONG",
+            "columnName": "INFO_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_EN_SHORT",
+            "columnName": "INFO_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_EN_MED",
+            "columnName": "INFO_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "INFO_EN_LONG",
+            "columnName": "INFO_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "MENU_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `MENU_IDX` INTEGER, `MENU_PT_SHORT` TEXT, `MENU_PT_MED` TEXT, `MENU_PT_LONG` TEXT, `MENU_ES_SHORT` TEXT, `MENU_ES_MED` TEXT, `MENU_ES_LONG` TEXT, `MENU_EN_SHORT` TEXT, `MENU_EN_MED` TEXT, `MENU_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "MENU_IDX",
+            "columnName": "MENU_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_PT_SHORT",
+            "columnName": "MENU_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_PT_MED",
+            "columnName": "MENU_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_PT_LONG",
+            "columnName": "MENU_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_ES_SHORT",
+            "columnName": "MENU_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_ES_MED",
+            "columnName": "MENU_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_ES_LONG",
+            "columnName": "MENU_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_EN_SHORT",
+            "columnName": "MENU_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_EN_MED",
+            "columnName": "MENU_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "MENU_EN_LONG",
+            "columnName": "MENU_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "STATE_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `STATE_IDX` INTEGER, `STATE_PT_SHORT` TEXT, `STATE_PT_MED` TEXT, `STATE_PT_LONG` TEXT, `STATE_ES_SHORT` TEXT, `STATE_ES_MED` TEXT, `STATE_ES_LONG` TEXT, `STATE_EN_SHORT` TEXT, `STATE_EN_MED` TEXT, `STATE_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "STATE_IDX",
+            "columnName": "STATE_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_PT_SHORT",
+            "columnName": "STATE_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_PT_MED",
+            "columnName": "STATE_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_PT_LONG",
+            "columnName": "STATE_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_ES_SHORT",
+            "columnName": "STATE_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_ES_MED",
+            "columnName": "STATE_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_ES_LONG",
+            "columnName": "STATE_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_EN_SHORT",
+            "columnName": "STATE_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_EN_MED",
+            "columnName": "STATE_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "STATE_EN_LONG",
+            "columnName": "STATE_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "UNIT_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `UNIT_IDX` INTEGER, `UNIT_PT_SHORT` TEXT, `UNIT_PT_MED` TEXT, `UNIT_PT_LONG` TEXT, `UNIT_ES_SHORT` TEXT, `UNIT_ES_MED` TEXT, `UNIT_ES_LONG` TEXT, `UNIT_EN_SHORT` TEXT, `UNIT_EN_MED` TEXT, `UNIT_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "UNIT_IDX",
+            "columnName": "UNIT_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_PT_SHORT",
+            "columnName": "UNIT_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_PT_MED",
+            "columnName": "UNIT_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_PT_LONG",
+            "columnName": "UNIT_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_ES_SHORT",
+            "columnName": "UNIT_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_ES_MED",
+            "columnName": "UNIT_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_ES_LONG",
+            "columnName": "UNIT_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_EN_SHORT",
+            "columnName": "UNIT_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_EN_MED",
+            "columnName": "UNIT_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "UNIT_EN_LONG",
+            "columnName": "UNIT_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "VALUE_TAB",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `VALUE_IDX` INTEGER, `VALUE_PT_SHORT` TEXT, `VALUE_PT_MED` TEXT, `VALUE_PT_LONG` TEXT, `VALUE_ES_SHORT` TEXT, `VALUE_ES_MED` TEXT, `VALUE_ES_LONG` TEXT, `VALUE_EN_SHORT` TEXT, `VALUE_EN_MED` TEXT, `VALUE_EN_LONG` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "_id",
+            "columnName": "_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "VALUE_IDX",
+            "columnName": "VALUE_IDX",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_PT_SHORT",
+            "columnName": "VALUE_PT_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_PT_MED",
+            "columnName": "VALUE_PT_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_PT_LONG",
+            "columnName": "VALUE_PT_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_ES_SHORT",
+            "columnName": "VALUE_ES_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_ES_MED",
+            "columnName": "VALUE_ES_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_ES_LONG",
+            "columnName": "VALUE_ES_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_EN_SHORT",
+            "columnName": "VALUE_EN_SHORT",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_EN_MED",
+            "columnName": "VALUE_EN_MED",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "VALUE_EN_LONG",
+            "columnName": "VALUE_EN_LONG",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'cccf887c79c06b361ddc0bb618c7f90d')"
+    ]
+  }
+}

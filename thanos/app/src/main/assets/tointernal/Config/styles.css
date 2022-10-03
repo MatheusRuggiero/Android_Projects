@@ -1,0 +1,93 @@
+* {
+    padding: 4px;
+
+}
+
+
+.boxBorder {
+    text-align: center;
+    line-height: 0.4;
+    padding: 1px 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+}
+
+.boxBorder h1 {
+    font-size: 2em;
+
+}
+
+.boxEquipment {
+    text-align: center;
+    font-size: 0.5cm;
+    margin-top: 2px;
+    width: 100%;
+}
+
+.boxBorderCar {
+    text-align: left;
+    padding: 1px 1px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    width: 100%;
+}
+
+.boxBorderCarInfo {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.boxBorderCarInfo p {
+    margin-right: 2cm;
+}
+
+.boxBorderCarNote {
+    margin-left: 10px;
+}
+
+.tableDefects {
+    width: 100%;
+}
+
+.tableInfo {
+    width: 100%;
+}
+
+.footerLine {
+    color: black;
+    size: 200px;
+}
+
+.footer {
+    align-items: center;
+}
+
+.imgGraph {
+    max-width: 1200px;
+    max-height: 350px;
+    width: 100%;
+    min-width: 260px;
+    min-height: 125px;
+}
+
+
+
+
+@media screen and (max-width: 388px) {
+    .boxBorder {
+        display: none;
+        /* width: 100%;
+        word-break: break-all; */
+    }
+
+}

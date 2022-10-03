@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_home"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_solicitacoesDeSistemasFragment"
+            app:destination="@id/solicitacoesDeSistemasFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_listaRelatoriosFragment"
+            app:destination="@id/listaRelatoriosFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_homeFragment_to_connectDeviceFragment"
+            app:destination="@id/connectDeviceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_conexaoFragment"
+            app:destination="@id/conexaoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+        <action
+            android:id="@+id/action_homeFragment_to_permissoesFragment"
+            app:destination="@id/permissoesFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_licencaDeUsoFragment"
+            app:destination="@id/licencaDeUsoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragment_car_workshop_information"
+            app:destination="@id/fragment_car_workshop_information" />
+        <action
+            android:id="@+id/action_homeFragment_to_configuracoesFragment"
+            app:destination="@id/configuracoesFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/solicitacoesDeSistemasFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.SolicitacoesDeSistemasFragment"
+        android:label="SolicitacaoDeSistemas"
+        tools:layout="@layout/fragment_solicitacoes_de_sistemas" >
+    </fragment>
+    <fragment
+        android:id="@+id/listaRelatoriosFragment"
+        android:name="br.com.tecnomotor.thanos.ui.relatorio.fragments.ListaRelatoriosFragment"
+        android:label="ListaRelatoriosFragment"
+        tools:layout="@layout/fragment_lista_relatorios">
+        <action
+            android:id="@+id/action_listaRelatoriosFragment_to_webView"
+            app:destination="@id/webView"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/webView"
+        android:name="br.com.tecnomotor.thanos.ui.relatorio.fragments.WebViewFragment"
+        tools:layout="@layout/fragment_webview">
+    </fragment>
+    <fragment
+        android:id="@+id/connectDeviceFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.ConnectDeviceFragment"
+        android:label="ConnectDeviceFragment"
+        tools:layout="@layout/fragment_connect_device">
+    </fragment>
+    <fragment
+        android:id="@+id/conexaoFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.ConexaoFragment"
+        android:label="ConexaoFragment"
+        tools:layout="@layout/fragment_conexao">
+        <action
+            android:id="@+id/action_conexaoFragment_to_connectDeviceFragment"
+            app:destination="@id/connectDeviceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/permissoesFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.PermissoesFragment"
+        android:label="PermissoesFragment"
+        tools:layout="@layout/fragment_permissoes">
+        <action
+            android:id="@+id/action_permissoesFragment_to_licencaDeUsoFragment"
+            app:destination="@id/licencaDeUsoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/permissoesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/licencaDeUsoFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.LicencaDeUsoFragment"
+        android:label="fragment_licenca_de_uso"
+        tools:layout="@layout/fragment_licenca_de_uso" >
+        <action
+            android:id="@+id/action_licencaDeUsoFragment_to_conexaoFragment"
+            app:destination="@id/conexaoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"
+            app:popUpTo="@id/licencaDeUsoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_homeFragment"
+        app:destination="@id/homeFragment"
+        app:launchSingleTop="false"
+        app:enterAnim="@android:anim/slide_in_left"
+        app:exitAnim="@android:anim/slide_out_right"
+        app:popEnterAnim="@android:anim/slide_in_left"
+        app:popExitAnim="@android:anim/slide_out_right" />
+
+    <fragment
+        android:id="@+id/fragment_car_workshop_information"
+        android:name="br.com.tecnomotor.thanos.fragment_car_workshop_information"
+        android:label="fragment_car_workshop_information"
+        tools:layout="@layout/fragment_car_workshop_information" />
+
+    <fragment
+        android:id="@+id/configuracoesFragment"
+        android:name="br.com.tecnomotor.thanos.ui.home.fragments.ConfiguracoesFragment"
+        android:label="fragment_car_workshop_information"
+        tools:layout="@layout/fragment_configuracoes" >
+        <action
+            android:id="@+id/action_configuracoesFragment_to_fragment_car_workshop_information"
+            app:destination="@id/fragment_car_workshop_information"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_configuracoesFragment_to_connectDeviceFragment"
+            app:destination="@id/connectDeviceFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popEnterAnim="@android:anim/slide_in_left"
+            app:popExitAnim="@android:anim/slide_out_right"/>
+    </fragment>
+
+</navigation>

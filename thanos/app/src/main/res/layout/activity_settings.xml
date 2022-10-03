@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_grey"
+    tools:context=".ui.configuracao.ConfiguracaoActivity">
+
+    <TextView
+        android:id="@+id/configuracao_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:text="Bluetooth"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/configuracao_mac"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="mac"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/configuracao_bluetooth"
+        app:layout_constraintStart_toEndOf="@id/configuracao_bluetooth" />
+
+    <TextView
+        android:id="@+id/configuracao_mac_numero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/configuracao_mac"
+        app:layout_constraintStart_toEndOf="@id/configuracao_mac"
+        tools:text="00:00:00:00:00:00" />
+
+    <ImageView
+        android:id="@+id/configuracao_icone_bluetooth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_search"
+        app:layout_constraintBottom_toTopOf="@id/configuracao_procurar"
+        app:layout_constraintEnd_toEndOf="@id/configuracao_procurar"
+        app:layout_constraintStart_toStartOf="@id/configuracao_procurar" />
+
+    <TextView
+        android:id="@+id/configuracao_procurar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="96dp"
+        android:text="Procurar"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_bluetooth" />
+
+    <ImageView
+        android:id="@+id/configuracao_icone_resetar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_resetar_prancheta_1"
+        app:layout_constraintBottom_toTopOf="@id/configuracao_resetar"
+        app:layout_constraintEnd_toEndOf="@id/configuracao_resetar"
+        app:layout_constraintStart_toStartOf="@id/configuracao_resetar" />
+
+    <TextView
+        android:id="@+id/configuracao_resetar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:text="Resetar"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/configuracao_procurar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/configuracao_divisor"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_procurar" />
+
+    <TextView
+        android:id="@+id/configuracao_idioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Idioma"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/configuracao_bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_divisor" />
+
+    <EditText
+        android:id="@+id/configuracao_idioma_selecionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/configuracao_idioma"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_idioma"
+        tools:text="Português(Brasil)" />
+
+    <View
+        android:id="@+id/configuracao_divisor2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_margin="16dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_idioma_selecionado" />
+
+    <TextView
+        android:id="@+id/configuracao_atualizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Atualização"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@id/configuracao_bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_divisor2" />
+
+    <TextView
+        android:id="@+id/configurao_ultima_atualizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Última atualização: "
+        android:layout_marginTop="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/configuracao_idioma_selecionado"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_atualizacao" />
+
+    <TextView
+        android:id="@+id/configuracao_dia_atualizacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/configurao_ultima_atualizacao"
+        app:layout_constraintBottom_toBottomOf="@id/configurao_ultima_atualizacao"
+        tools:text="12/04/2021" />
+
+    <Button
+        android:id="@+id/configuracao_botao_atualizar"
+        android:layout_width="180dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="56dp"
+        android:text="Atualizar agora"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:backgroundTint="@color/button_grey_light"
+        app:layout_constraintStart_toStartOf="@id/configuracao_bluetooth"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_atualizacao" />
+
+    <Button
+        android:id="@+id/configuracao_botao_recuperar"
+        android:layout_width="180dp"
+        android:layout_height="68dp"
+        android:layout_marginRight="16dp"
+        android:text="Recuperar a Interface Lógica"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        android:backgroundTint="@color/button_grey_light"
+        app:layout_constraintBottom_toBottomOf="@id/configuracao_botao_atualizar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <CheckBox
+        android:id="@+id/configuracao_checkbox"
+        android:layout_width="32dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/configuracao_demonstracao"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/configuracao_demonstracao" />
+
+    <Button
+        android:id="@+id/configuracao_demonstracao"
+        android:layout_width="316dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="16dp"
+        android:text="Modo de demonstração"
+        android:textAllCaps="false"
+        android:backgroundTint="@color/button_grey_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/configuracao_botao_atualizar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

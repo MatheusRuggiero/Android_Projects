@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/configuracoes_cardview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_default"
+                android:padding="8dp">
+
+                <Button
+                    android:id="@+id/btnAtualizarDadosOficina"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/atualizar"
+                    android:textColor="@color/button_blue_primary"
+                    android:textSize="16sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/configuracoes_tel"
+                    app:strokeColor="@color/button_blue_primary"
+                    tools:ignore="SmallSp" />
+
+                <TextView
+                    android:id="@+id/configuracoes_dados_oficina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dados_da_oficina"
+                    android:textAllCaps="true"
+                    android:textColor="@color/text_card_primary"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/configuracoes_razao_social"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/razao_social"
+                    android:textColor="@color/text_card_primary"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/configuracoes_dados_oficina"
+                    app:layout_constraintTop_toBottomOf="@id/configuracoes_dados_oficina" />
+
+                <TextView
+                    android:id="@+id/configuracoes_razao_social_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/configuracoes_razao_social"
+                    app:layout_constraintTop_toTopOf="@+id/configuracoes_razao_social"
+                    tools:text="Mecânica Thanos S/A" />
+
+                <TextView
+                    android:id="@+id/configuracoes_cnpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/cnpj"
+                    android:textColor="@color/text_card_primary"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/configuracoes_razao_social"
+                    app:layout_constraintTop_toBottomOf="@id/configuracoes_razao_social" />
+
+                <TextView
+                    android:id="@+id/configuracoes_cnpj_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/configuracoes_cnpj"
+                    app:layout_constraintTop_toTopOf="@+id/configuracoes_cnpj"
+                    tools:text="111.111.111/0001-11" />
+
+                <TextView
+                    android:id="@+id/configuracoes_tel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/phone"
+                    android:textColor="@color/text_card_primary"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/configuracoes_cnpj"
+                    app:layout_constraintTop_toBottomOf="@id/configuracoes_cnpj" />
+
+                <TextView
+                    android:id="@+id/configuracoes_tel_valor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/configuracoes_tel"
+                    app:layout_constraintTop_toTopOf="@+id/configuracoes_tel"
+                    tools:text="+55-16991553344" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/configuracoes_bluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/dispositivo_conectado"
+            android:textAllCaps="true"
+            android:textColor="@color/text_card_primary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_cardview" />
+
+        <TextView
+            android:id="@+id/configuracoes_dispositivo_configurado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Nenhum dispositivo configurado"
+            android:textColor="@color/text_card_primary"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/configuracoes_bluetooth" />
+
+        <Button
+            android:id="@+id/btnParearBluetooth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/button_blue_primary"
+            android:padding="10dp"
+            android:text="@string/parear_por_bluetooth"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:icon="@drawable/ic_bluetooth_serching_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_dispositivo_configurado" />
+
+        <!--    <Button-->
+        <!--        android:id="@+id/configuracoes_btn_resetar"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_marginTop="16dp"-->
+        <!--        android:backgroundTint="@color/button_blue_primary"-->
+        <!--        android:padding="10dp"-->
+        <!--        android:text="Resetar"-->
+        <!--        android:textColor="@color/text_primary"-->
+        <!--        android:textSize="16sp"-->
+        <!--        app:icon="@drawable/ic_resetar_prancheta_white"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toEndOf="@id/configuracoes_btn_atualizar"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/configuracoes_dispositivo_configurado" />-->
+
+        <View
+            android:id="@+id/configuracoes_view_divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toTopOf="@+id/configuracoes_view_divider2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnParearBluetooth" />
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/configuracoes_textlayout_idioma"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:hint="Idioma"-->
+<!--            android:textColorHint="@color/button_blue_primary"-->
+<!--            app:boxStrokeColor="@color/button_blue_primary"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/configuracoes_view_divider"-->
+<!--            app:prefixTextColor="@color/button_blue_primary">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/configuracoes_select_idioma"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:maxLength="100"-->
+<!--                android:textAllCaps="true"-->
+<!--                tools:ignore="LabelFor" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <View
+            android:id="@+id/configuracoes_view_divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/configuracoes_atualizacao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_view_divider" />
+
+        <TextView
+            android:id="@+id/configuracoes_atualizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/atualizacao_da_vci"
+            android:textAllCaps="true"
+            android:textColor="@color/text_card_primary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_view_divider2" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/configuracoes_switch_atualizar"
+            style="@style/Widget.App.Switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:checked="false"
+            android:text="@string/notificar_sobre_atualizacoes"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_atualizacao" />
+
+        <TextView
+            android:id="@+id/configuracoes_ultima_atualizacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/ultima_atualizacao"
+            android:textColor="@color/text_card_primary"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toStartOf="@id/configuracoes_ultima_atualizacao_valor"
+            app:layout_constraintStart_toStartOf="@+id/configuracoes_btn_atualizar_agora"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_switch_atualizar" />
+
+        <TextView
+            android:id="@+id/configuracoes_ultima_atualizacao_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/configuracoes_btn_atualizar_agora"
+            app:layout_constraintStart_toEndOf="@id/configuracoes_ultima_atualizacao"
+            app:layout_constraintTop_toTopOf="@+id/configuracoes_ultima_atualizacao"
+            tools:text="20/09/2022 às 14:31hs" />
+
+        <Button
+            android:id="@+id/configuracoes_btn_atualizar_agora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="8dp"
+            android:backgroundTint="@color/button_blue_primary"
+            android:padding="10dp"
+            android:text="@string/atualizar_agora"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_ultima_atualizacao" />
+
+        <View
+            android:id="@+id/configuracoes_view_divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="16dp"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toTopOf="@+id/configuracoes_relatorio"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_btn_atualizar_agora" />
+
+        <TextView
+            android:id="@+id/configuracoes_relatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/relatorio"
+            android:textAllCaps="true"
+            android:textColor="@color/text_card_primary"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_view_divider3" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/configuracoes_switch_exibir_dados_empresa"
+            style="@style/Widget.App.Switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:checked="true"
+            android:text="@string/exibir_dados_empresa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_relatorio" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/configuracoes_switch_exibir_dados_qtd_pagina"
+            style="@style/Widget.App.Switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/exibir_numero_pagina"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_switch_exibir_dados_empresa" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/configuracoes_switch_exibir_data_hora_impressao"
+            style="@style/Widget.App.Switch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/exibir_data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/configuracoes_switch_exibir_dados_qtd_pagina" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

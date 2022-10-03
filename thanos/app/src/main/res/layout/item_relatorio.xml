@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_relatorio_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_default">
+
+        <ImageView
+            android:id="@+id/item_relatorio_icon"
+            android:layout_width="35dp"
+            android:layout_height="40dp"
+            android:layout_margin="8dp"
+            android:src="@drawable/ic_relatorio_dark_light"
+            app:layout_constraintBottom_toBottomOf="@id/item_relatorio_cardview"
+            app:layout_constraintStart_toStartOf="@id/item_relatorio_cardview"
+            app:layout_constraintTop_toTopOf="@id/item_relatorio_cardview"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/item_relatorio_placa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAllCaps="true"
+            android:textColor="@color/text_card_primary"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/item_relatorio_grupo_sistema"
+            app:layout_constraintEnd_toEndOf="@id/item_relatorio_cardview"
+            app:layout_constraintStart_toStartOf="@id/item_relatorio_cardview"
+            app:layout_constraintTop_toTopOf="@id/item_relatorio_cardview"
+            tools:text="XXX-3512" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/item_relatorio_grupo_sistema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/item_relatorio_data"
+            app:layout_constraintEnd_toEndOf="@id/item_relatorio_placa"
+            app:layout_constraintStart_toStartOf="@id/item_relatorio_placa">
+
+            <TextView
+                android:id="@+id/item_relatorio_montadora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="VW" />
+
+            <TextView
+                android:id="@+id/item_relatorio_veiculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/item_relatorio_montadora"
+                app:layout_constraintStart_toEndOf="@id/item_relatorio_montadora"
+                tools:text="GOL" />
+
+            <TextView
+                android:id="@+id/item_relatorio_separador"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" - "
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/item_relatorio_veiculo"
+                app:layout_constraintStart_toEndOf="@id/item_relatorio_veiculo"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/item_relatorio_motorizacao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/item_relatorio_separador"
+                app:layout_constraintStart_toEndOf="@id/item_relatorio_separador"
+                tools:text="1.6" />
+
+            <TextView
+                android:id="@+id/item_relatorio_sistema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/item_relatorio_motorizacao"
+                app:layout_constraintStart_toEndOf="@id/item_relatorio_motorizacao"
+                tools:text="Multec" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/item_relatorio_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="18/08/2022" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

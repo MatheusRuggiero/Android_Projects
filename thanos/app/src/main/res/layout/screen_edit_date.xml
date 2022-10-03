@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/screen_edit_date_dia"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintEnd_toStartOf="@+id/screen_edit_date_separador_data_dia"
+        app:layout_constraintTop_toTopOf="@+id/screen_edit_date_separador_data_dia"
+        app:layout_constraintBottom_toBottomOf="@+id/screen_edit_date_separador_data_dia">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Dia"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2"
+            android:textSize="60sp"
+            tools:text="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/screen_edit_date_separador_data_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+       app:layout_constraintEnd_toStartOf="@id/screen_edit_date_mes"
+        app:layout_constraintTop_toTopOf="@id/screen_edit_date_mes"
+        app:layout_constraintBottom_toBottomOf="@id/screen_edit_date_mes"
+        android:text="/"
+        android:textSize="60sp"
+        android:textStyle="bold"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/screen_edit_date_mes"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/screen_edit_date_operacoes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Mes"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2"
+            android:textSize="60sp"
+            tools:text="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/screen_edit_date_separador_data_mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:layout_constraintStart_toEndOf="@id/screen_edit_date_mes"
+        app:layout_constraintTop_toTopOf="@id/screen_edit_date_mes"
+        app:layout_constraintBottom_toBottomOf="@id/screen_edit_date_mes"
+        android:text="/"
+        android:textStyle="bold"
+        android:textSize="60sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/screen_edit_date_ano"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:theme="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        app:layout_constraintStart_toEndOf="@+id/screen_edit_date_separador_data_mes"
+        app:layout_constraintTop_toTopOf="@id/screen_edit_date_separador_data_mes"
+        app:layout_constraintBottom_toBottomOf="@id/screen_edit_date_separador_data_mes">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="Ano"
+            android:inputType="number"
+            android:lines="1"
+            android:maxLength="2"
+            android:textSize="60sp"
+            tools:text="10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/screen_edit_date_operacoes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintBottom_toTopOf="@id/screen_edit_date_separador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screen_edit_date_dia">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:listitem="@layout/item" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:id="@+id/screen_edit_date_separador"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/screen_edit_date_btn_cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/cancelar"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/screen_edit_date_separador" />
+
+    <Button
+        android:id="@+id/screen_edit_date_btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:text="@string/ok"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/screen_edit_date_btn_cancelar"
+        app:layout_constraintEnd_toStartOf="@+id/screen_edit_date_btn_cancelar"
+        app:layout_constraintTop_toTopOf="@+id/screen_edit_date_btn_cancelar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

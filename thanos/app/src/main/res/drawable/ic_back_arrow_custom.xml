@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="73dp"
+    android:height="54dp"
+    android:viewportWidth="73"
+    android:viewportHeight="54">
+    <path
+        android:fillColor="@android:color/transparent"
+        android:pathData="M0 0h72.88L44.72 54H0V0Z"/>
+    <path
+        android:fillColor="@color/button_xavier_cinza"
+        android:pathData="M40.47 21.9c-0.68-1.1-1.88-1.76-3.21-1.76h-9.98v-3.05c0-1.6-1.82-2.61-3.27-1.8l-6.36 5.27c-0.87 0.48-0.87 2.3 0.01 2.78l6.35 5.27c1.45 0.8 3.27-0.2 3.27-1.81v-3.16h9.98c0.02 0 0.05 0 0.08 0.04 0.02 0.05 0 0.07 0 0.09l-6.44 11c-0.25 0.45-0.73 0.73-1.26 0.73h-5.1L22.64 39h7.01c1.86 0 3.57-0.98 4.46-2.54l6.44-11.01c0.64-1.13 0.61-2.45-0.07-3.55Z" />
+    <path
+        android:fillColor="#FFC8191B"
+        android:pathData="M22.27 35.5h-3.24L17.05 39h3.3l1.92-3.5Z" />
+</vector>

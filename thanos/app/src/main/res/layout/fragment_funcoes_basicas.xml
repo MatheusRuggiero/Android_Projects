@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="startCommunication"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="stopCommunication"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="verzion"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="montadoras"
+            type="android.view.View.OnClickListener" />
+
+        <variable
+            name="botaoViewModel"
+            type="br.com.tecnomotor.thanos.ui.testesUnitarios.viewmodel.UnitTestViewModel" />
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.testesUnitarios.FuncoesBasicasFragment">
+
+
+        <Button
+            android:id="@+id/btnStartCommunication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:icon="@drawable/ic_start"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            android:onClick="@{() -> botaoViewModel.innicialization()}"
+            android:text="Start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btnStopCommunication"
+            app:layout_constraintHorizontal_bias="0.350"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.349"
+            tools:ignore="OnClick,RtlHardcoded,UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/btnStopCommunication"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:icon="@drawable/ic_stop"
+            app:iconGravity="textStart"
+            app:iconPadding="12dp"
+            android:text="Stop"
+            app:layout_constraintBottom_toBottomOf="@+id/btnStartCommunication"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btnStartCommunication"
+            app:layout_constraintTop_toTopOf="@+id/btnStartCommunication"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/texto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.montadoras.toString()}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/btnStartCommunication"
+            app:layout_constraintTop_toBottomOf="@id/btnStartCommunication"/>
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.versaoFirmware.toString()}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/texto1"
+            app:layout_constraintTop_toBottomOf="@id/texto1"/>
+
+        <TextView
+            android:id="@+id/texto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.numSerie.toString()}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/texto2"
+            app:layout_constraintTop_toBottomOf="@id/texto2"/>
+        <TextView
+            android:id="@+id/texto4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.versao}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/texto3"
+            app:layout_constraintTop_toBottomOf="@id/texto3"/>
+
+        <TextView
+            android:id="@+id/texto5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.plataforma}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/texto4"
+            app:layout_constraintTop_toBottomOf="@id/texto4"/>
+        <TextView
+            android:id="@+id/texto6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:text="@{botaoViewModel.rasther.rastherInfoLiveData.bootId}"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/texto5"
+            app:layout_constraintTop_toBottomOf="@id/texto5"/>
+
+        <TextView
+            android:id="@+id/section_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+            tools:layout_constraintLeft_creator="1"
+            tools:layout_constraintTop_creator="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

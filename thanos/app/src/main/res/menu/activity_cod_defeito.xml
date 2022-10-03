@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_codDefeito_screenshot"
+        android:title="Print"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_print_white_24" />
+
+    <item android:id="@+id/menu_codDefeito_delete"
+        android:title="Excluir"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_delete_white_24" />
+
+    <item android:id="@+id/menu_codDefeito_update"
+        android:title="Atualizar"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menu_codDefeito_report"
+        android:title="Enviar Relatório"
+        app:showAsAction="ifRoom" />
+
+</menu>

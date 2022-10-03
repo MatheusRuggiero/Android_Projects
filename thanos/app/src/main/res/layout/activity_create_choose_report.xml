@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tv_placa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/placa"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_plate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_placa"
+        tools:ignore="MissingConstraints"/>
+
+    <Button
+        android:id="@+id/btnChoosePlate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Criar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_placa"
+        app:layout_constraintTop_toBottomOf="@id/edt_plate" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChoosePlate" />
+
+    <Button
+        android:id="@+id/btnChooseReport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Selecionar Existente"
+        app:layout_constraintEnd_toEndOf="@id/btnChoosePlate"
+        app:layout_constraintStart_toStartOf="@id/btnChoosePlate"
+        app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

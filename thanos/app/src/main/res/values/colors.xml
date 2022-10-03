@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#8A959C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#E53935</color>
+    <color name="blue">#0000FF</color>
+    <color name="blue_bluetooth">#3355FF</color>
+
+
+    <color name="background_grey">#525C63</color>
+    <color name="background_red">#E57373</color>
+    <color name="button_grey_light">#8A959C</color>
+    <color name="button_blue_primary">#00678D</color>
+    <color name="button_xavier_cinza">#DAE0E3</color>
+    <color name="grey_info">#696969</color>
+    <color name="gray">#434E56</color>
+    <color name="information_grey_dark">#333333</color>
+    <color name="loadding">#00678D</color>
+
+    <!--    Language Colors-->
+    <color name="statusBarColorInverted">#F6412D</color>
+    <color name="statusBarColor">#2D679A</color>
+
+    <!-- Text colors-->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_card_primary">#333333</color>
+    <color name="text_card_disabled">#9E9E9E</color>
+
+    <!--    Button colors-->
+    <color name="button_background">#d3d3d3</color>
+
+    <!-- card colors -->
+    <color name="transparent">#00000000</color>
+    <color name="card_background">#ffffff</color>
+    <color name="card_background_secondary">#d3d3d3</color>
+    <color name="card_shadow_1">#d4d4d4</color>
+    <color name="card_shadow_2">#dddddd</color>
+    <color name="card_shadow_3">#CABBBBBB</color>
+    <color name="card_detailing">#eee</color>
+    <color name="scroll_background">#EEE</color>
+
+    <color name="card_aprovado_background">#81C784</color>
+    <color name="card_aprovado_shadow_1">#43A047</color>
+    <color name="card_aprovado_shadow_2">#4CAF50</color>
+
+    <color name="card_reprovado_background">#E57373</color>
+    <color name="card_reprovado_shadow_1">#E53935</color>
+    <color name="card_reprovado_shadow_2">#F44336</color>
+
+    <color name="card_disabled_background">#BDBDBD</color>
+    <color name="card_disabled_shadow_1">#757575</color>
+    <color name="card_disabled_shadow_2">#9E9E9E</color>
+    <color name="titles_home_activity">#665</color>
+
+
+</resources>

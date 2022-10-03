@@ -1,0 +1,20 @@
+<resources>
+    <!-- https://developer.android.com/guide/topics/ui/look-and-feel/themes?hl=pt-br -->
+    <!-- Base application theme. -->
+    <style name="Theme.Thanos" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/teal_200</item>
+        <item name="colorPrimaryVariant">@color/gray</item>
+        <item name="colorOnPrimary">@color/gray</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorOnSecondary</item>
+        <item name="android:headerBackground">?attr/colorOnSecondary</item>
+        <!-- Customize your theme here. -->
+        <!-- background -->
+        <item name="android:windowBackground">#3c3c3d</item>
+    </style>
+</resources>

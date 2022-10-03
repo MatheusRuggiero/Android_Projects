@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--
+         Link para visualizar todas as permissões possíveis
+        https://developer.android.com/reference/android/Manifest.permission?hl=pt-br
+        https://developer.android.com/guide/topics/manifest/permission-element
+    -->
+    <!--
+    "normal"
+        The default value. A lower-risk permission that gives requesting applications access to
+        isolated application-level features, with minimal risk to other applications, the system,
+        or the user. The system automatically grants this type of permission to a requesting
+        application at installation, without asking for the user's explicit approval
+        (though the user always has the option to review these permissions before installing).
+
+    "dangerous"
+        A higher-risk permission that would give a requesting application access to private user data
+        or control over the device that can negatively impact the user. Because this type of permission
+        introduces potential risk, the system may not automatically grant it to the requesting application.
+        For example, any dangerous permissions requested by an application may be displayed to the user
+        and require confirmation before proceeding, or some other approach may be taken to avoid the
+        user automatically allowing the use of such facilities.
+    -->
+    <!--
+        Allows applications to access information about networks.
+        Protection level: normal
+    -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--
+        Allows applications to open network sockets.
+        Protection level: normal
+    -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--
+        Allows applications to connect to paired bluetooth devices.
+        Protection level: normal
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!--
+        Allows applications to discover and pair bluetooth devices.
+        Protection level: normal
+    -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!--
+        Required to be able to connect to paired Bluetooth devices.
+        Protection level: dangerous
+        Added in API level 31
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!--
+        Required to be able to discover and pair nearby Bluetooth devices.
+        Protection level: dangerous
+        Added in API level 31
+    -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <!--
+        Required only when requesting background location access on Android 10 (API level 29) and higher.
+        Allows an app to access location in the background.
+        If you're requesting this permission, you must also request either ACCESS_COARSE_LOCATION or
+        ACCESS_FINE_LOCATION. Requesting this permission by itself doesn't give you location access.
+        Protection level: dangerous
+        Added in API level 29
+    -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!--
+        Allows an app to access approximate location. Alternatively, you might want ACCESS_FINE_LOCATION.
+        Protection level: dangerous
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--
+        Allows an app to access precise location. Alternatively, you might want ACCESS_COARSE_LOCATION.
+        Protection level: dangerous
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--
+        Required to be able to access the camera device.
+        Protection level: dangerous
+    -->
+    <!-- <uses-permission android:name="android.permission.CAMERA" /> -->
+    <!--
+        Allows an application to read from external storage.
+        Protection level: dangerous
+        Added in API level 16
+    -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--
+        Allows an application to write to external storage.
+        Protection level: dangerous
+        Added in API level 4
+    -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--
+        Allows an application to access any geographic locations persisted in the user's shared collection.
+        Protection level: dangerous
+        Added in API level 29
+    -->
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:hasFragileUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Thanos"
+        tools:targetApi="q">
+        <activity
+            android:name=".ui.diagnostico.DiagnosticActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.menu.MenuActivity"
+            android:configChanges="keyboardHidden" />
+        <activity android:name=".ui.UpdateInstructionActivity" />
+        <activity android:name=".ui.home.HomeActivity" />
+        <activity android:name=".ui.testesUnitarios.UnitTestActivity" />
+        <activity android:name=".ui.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.diagnostico.ProgramacoesActivity" />
+        <activity android:name=".ui.configuracao.ConfiguracaoActivity" />
+    </application>
+
+</manifest>

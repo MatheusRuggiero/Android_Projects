@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<icc>
+  <AR>
+    <CODE>ARG</CODE>
+    <NAMEEN>Argentina</NAMEEN>
+    <PHONE>54</PHONE>
+    <NAMEPT>Argentina</NAMEPT>
+    <NAMEES>Argentina</NAMEES>
+  </AR>
+  <BR>
+    <CODE>BRA</CODE>
+    <NAMEEN>Brazil</NAMEEN>
+    <PHONE>55</PHONE>
+    <NAMEPT>Brasil</NAMEPT>
+    <NAMEES>Brasil</NAMEES>
+  </BR>
+  <BO>
+    <CODE>BOL</CODE>
+    <NAMEEN>Bolivia</NAMEEN>
+    <PHONE>591</PHONE>
+    <NAMEPT>Bolívia</NAMEPT>
+    <NAMEES>Bolivia</NAMEES>
+  </BO>
+  <CL>
+    <CODE>CHL</CODE>
+    <NAMEEN>Chile</NAMEEN>
+    <PHONE>56</PHONE>
+    <NAMEPT>Chile</NAMEPT>
+    <NAMEES>Chile</NAMEES>
+  </CL>
+  <CO>
+    <CODE>COL</CODE>
+    <NAMEEN>Colombia</NAMEEN>
+    <PHONE>57</PHONE>
+    <NAMEPT>Colômbia</NAMEPT>
+    <NAMEES>Colombia</NAMEES>
+  </CO>
+  <CR>
+    <CODE>CRI</CODE>
+    <NAMEEN>Costa Rica</NAMEEN>
+    <PHONE>506</PHONE>
+    <NAMEPT>Costa Rica</NAMEPT>
+    <NAMEES>Costa Rica</NAMEES>
+  </CR>
+  <EC>
+    <CODE>ECU</CODE>
+    <NAMEEN>Ecuador</NAMEEN>
+    <PHONE>593</PHONE>
+    <NAMEPT>Equador</NAMEPT>
+    <NAMEES>Ecuador</NAMEES>
+  </EC>
+  <ES>
+    <CODE>ESP</CODE>
+    <NAMEEN>Spain</NAMEEN>
+    <PHONE>34</PHONE>
+    <NAMEPT>Espanha</NAMEPT>
+    <NAMEES>España</NAMEES>
+  </ES>
+  <HN>
+    <CODE>HND</CODE>
+    <NAMEEN>Honduras</NAMEEN>
+    <PHONE>504</PHONE>
+    <NAMEPT>Honduras</NAMEPT>
+    <NAMEES>Honduras</NAMEES>
+  </HN>
+  <MX>
+    <CODE>MEX</CODE>
+    <NAMEEN>Mexico</NAMEEN>
+    <PHONE>52</PHONE>
+    <NAMEPT>México</NAMEPT>
+    <NAMEES>Mexico</NAMEES>
+  </MX>
+  <PA>
+    <CODE>PAN</CODE>
+    <NAMEEN>Panama</NAMEEN>
+    <PHONE>507</PHONE>
+    <NAMEPT>Panamá</NAMEPT>
+    <NAMEES>Panamá</NAMEES>
+  </PA>
+  <PY>
+    <CODE>PRY</CODE>
+    <NAMEEN>Paraguay</NAMEEN>
+    <PHONE>595</PHONE>
+    <NAMEPT>Paraguai</NAMEPT>
+    <NAMEES>Paraguay</NAMEES>
+  </PY>
+  <PE>
+    <CODE>PER</CODE>
+    <NAMEEN>Peru</NAMEEN>
+    <PHONE>51</PHONE>
+    <NAMEPT>Peru</NAMEPT>
+    <NAMEES>Perú</NAMEES>
+  </PE>
+  <PR>
+    <CODE>PRI</CODE>
+    <NAMEEN>Puerto Rico</NAMEEN>
+    <PHONE>1</PHONE>
+    <NAMEPT>Porto Rico</NAMEPT>
+    <NAMEES>Puerto Rico</NAMEES>
+  </PR>
+  <UY>
+    <CODE>URY</CODE>
+    <NAMEEN>Uruguay</NAMEEN>
+    <PHONE>598</PHONE>
+    <NAMEPT>Uruguai</NAMEPT>
+    <NAMEES>Uruguay</NAMEES>
+  </UY>
+  <US>
+    <CODE>USA</CODE>
+    <NAMEEN>United States</NAMEEN>
+    <PHONE>1</PHONE>
+    <NAMEPT>Estados Unidos</NAMEPT>
+    <NAMEES>Estados Unidos</NAMEES>
+  </US>
+  <VE>
+    <CODE>VEN</CODE>
+    <NAMEEN>Venezuela</NAMEEN>
+    <PHONE>58</PHONE>
+    <NAMEPT>Venezuela</NAMEPT>
+    <NAMEES>Venezuela</NAMEES>
+  </VE>
+</icc>

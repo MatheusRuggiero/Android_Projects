@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewNomeRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNomeRP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@color/card_background"
+        android:hint="@string/nameHint"
+        android:inputType="textPersonName"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/textViewNomeRP" />
+
+    <TextView
+        android:id="@+id/textViewEmailRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/email"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/editTextNomeRP" />
+
+    <EditText
+        android:id="@+id/editTextEmailRP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/card_background"
+        android:hint="@string/emailHint"
+        android:inputType="textEmailAddress"
+        android:padding="4dp"
+        app:layout_constraintEnd_toEndOf="@id/editTextNomeRP"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmailRP" />
+
+    <TextView
+        android:id="@+id/textViewPaisRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="País:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmailRP" />
+
+    <!--    <Spinner-->
+    <!--        android:id="@+id/spinnerPaisRP"-->
+    <!--        android:layout_width="0dp"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/textViewPaisRP"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/editTextNomeRP"/>-->
+
+    <LinearLayout
+        android:id="@+id/spinnerPaisRPLinear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewPaisRP"
+        app:layout_constraintEnd_toEndOf="@id/editTextNomeRP"
+        app:layout_constraintStart_toStartOf="@+id/editTextNomeRP"
+        android:background="@color/card_background">
+
+        <Spinner
+            android:id="@+id/spinnerPaisRP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/editTextNomeRP" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewTelefoneRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/phone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPaisRPLinear" />
+
+    <TextView
+        android:id="@+id/textViewDdiRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/card_background"
+        android:padding="4dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@id/textViewNomeRP"
+        app:layout_constraintTop_toBottomOf="@id/textViewTelefoneRP" />
+
+    <EditText
+        android:id="@+id/editTextTelefoneRP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@color/card_background"
+        android:hint="@string/phoneHint"
+        android:inputType="phone"
+        android:padding="4dp"
+        app:layout_constraintStart_toEndOf="@id/textViewDdiRP"
+        app:layout_constraintTop_toTopOf="@id/textViewDdiRP"
+        app:layout_constraintEnd_toEndOf="@id/editTextNomeRP"/>
+
+    <Button
+        android:id="@+id/btnCancelProductRegister"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnOkProductRegister"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOkProductRegister"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/ok"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        app:layout_constraintBottom_toBottomOf="@id/btnCancelProductRegister"
+        app:layout_constraintTop_toTopOf="@id/btnCancelProductRegister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelProductRegister" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
